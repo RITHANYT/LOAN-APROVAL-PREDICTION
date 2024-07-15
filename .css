@@ -1,0 +1,15 @@
+.message {
+    font-size: 20px;
+    color: #333;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.approved {
+    background-color: #c1e7c3;
+}
+
+.rejected {
+    background-color: #f5b7b1;
+}

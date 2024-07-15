@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loan Approval Prediction</title>
+    <style>
+        body{
+            background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            line-height: 200%;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-variant: normal;
+            
+        
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <img rel="logo" href="templates\logo.jpg">
+	<h1>Loan Approval Prediction</h1>
+	<form action="{{ url_for('predict') }}" method="post">
+		<label style="margin-left: 275px; text-align: justify;">Gender:</label>
+		<select name="Gender">
+			<option value="1">Male</option>
+			<option value="0">Female</option>
+		</select>
+		<br><br>
+		<label style="margin-left: 275px; text-align: justify;">Married:</label>
+		<select name="Married">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</select>
+		<br><br>
+		<label style="margin-left: 275px; text-align: justify;">Dependents:</label>
+		<input type="text" name="Dependents">
+		<br>
+        <p style="line-height: 0%; margin-left: 275px;">* rate this 0 to 3</p>
+        <br>
+		<label style="margin-left: 275px; text-align: justify;">Education:</label>
+        <select name="Education">
+			<option value="1">Graduate</option>
+			<option value="0">Not Graduate</option>
+        </select>
+		<br><br>
+		<label style="margin-left: 275px; text-align: justify;">Self Employed:</label>
+		<select name="Self_Employed">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</select>
+		<br><br>
+		<label style="margin-left: 275px; text-align: justify;">Applicant Income:</label>
+		<input type="text" name="ApplicantIncome">
+		<br><br>
+		<label style="margin-left: 275px; text-align: justify;">Coapplicant Income:</label>
+		<input type="text" name="CoapplicantIncome">
+		<br><br>
+		<label style="margin-left: 275px; text-align: justify;">Loan Amount:</label>
+		<input type="text" name="LoanAmount">
+		<br><br>
+		<label style="margin-left: 275px; text-align: justify;">Loan Amount Term:</label>
+		<input type="text" name="Loan_Amount_Term">
+		<br><br>
+		<label style="margin-left: 275px; text-align: justify;">Credit History:</label>
+		<select name="Credit_History">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</select>
+		<br><br>
+		<label style="margin-left: 275px;">Property Area:</label>
+		<select name="Property_Area">
+			<option value="0">Rural</option>
+			<option value="1">Semiurban</option>
+			<option value="2">Urban</option>
+		</select>
+		<br><br>
+		<input style="margin-left: 310px; text-align: justify;"type="submit" value="Predict">
+	</form>
+</body>
+</html>
