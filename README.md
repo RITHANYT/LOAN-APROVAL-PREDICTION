@@ -1,4 +1,5 @@
 💰 Loan Approval Prediction System
+
 This is a Machine Learning web application built with Flask and Support Vector Machine (SVM) classifier that predicts whether a user's loan will be approved or not based on their inputs such as income, credit history, dependents, etc.
 
 📊 Dataset
